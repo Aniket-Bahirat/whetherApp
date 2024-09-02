@@ -44,9 +44,8 @@ function Whether() {
       </button>
       </div>
 
-      {loading && <p className="loading-message">Loading data…</p>}
-      
-      {weatherData && (
+      {!loading && <p>Loading data…</p>}
+      {!loading && weatherData && (
         <div className="weather-cards">
           <div className="weather-card">
             <p>Temperature</p>
